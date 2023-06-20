@@ -1,0 +1,48 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<ClassDiagram id="PROJECT">
+  <Classes>
+    <Classe id="A" isAbstract="false" visibility="public">
+      <Implements/>
+      <Extends>
+        <SuperClasse/>
+      </Extends>
+      <Attributs>
+        <Attribut id="a" isStatic="false" visibility="public" type="String"/>
+      </Attributs>
+      <Methodes>
+        <Methode id="m1" isAbstract="false" isStatic="false">
+          <TypeRetour isVoid="false" type="String"/>
+          <Arguments>
+            <Argument id="a" type="String"/>
+          </Arguments>
+        </Methode>
+      </Methodes>
+    </Classe>
+    <Classe id="B" isAbstract="false" visibility="public">
+      <Implements/>
+      <Extends>
+        <SuperClasse refid="A"/>
+      </Extends>
+      <Attributs>
+        <Attribut id="b" isStatic="false" visibility="public" type="String"/>
+      </Attributs>
+      <Methodes/>
+    </Classe>
+    <Classe id="C" isAbstract="false" visibility="public">
+      <Implements/>
+      <Extends>
+        <SuperClasse refid="A"/>
+      </Extends>
+      <Attributs/>
+      <Methodes/>
+    </Classe>
+    <Relations>
+      <Relation type="composition" multiplicity_sf="n">
+        <FirstClasse refid="B"/>
+        <SecondClasse refid="C"/>
+      </Relation>
+    </Relations>
+  </Classes>
+  <Classes/>
+</ClassDiagram>
